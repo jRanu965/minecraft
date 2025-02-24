@@ -2,17 +2,57 @@ div{
     border: 1px solid black ;
     background-color: lime ;
 }
-.contanior {
+.container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 300px 200px 150px 250px; 
 }
-.header{
-    grid-column: 1/3    ;
-    grid-row: 2/3   ;
-    background-color: aquamarine;
+.title{
+    grid-column: 2/3    ;
+    grid-row: 1/3   ;
     padding-top: 20px;
 }
 .nav {
-    grid-column: ;
+    grid-column: 1/2 ;
+    grid-row: 1/2;
+}
+.body{
+    grid-column: 1/2;
+    grid-row: 2/4;
+
+}
+.text{
+    grid-column: 2/3;
+    grid-row: 3/5;
+}
+.footer{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+ul {
+	list-style-type: none; /* Get rid of bullets for ul */
+	margin: 0px; /* No spaces around the ul */
+	padding: 0px; /* No spaces inside the ul */
+	overflow: hidden; /* Don't allow the floated li blocks to collapse the navbar */
+	background-color: #333;
+}
+
+li {
+	float:left; /* Float each li block to the top left beside each other */
+}
+
+li a {
+	display: block; /* Allow the element to take up its own line and space */
+	color: white;
+	text-align: center; /* Center the text in the block */
+	padding: 14px 16px; /* 14px space on the top and bottom; 16px space on the left and right */
+	text-decoration: none; /* Do not underline the link */
+}
+
+li a:hover:not(.active) { /* Change colour on hover of all blocks but NOT the .active class */
+	background-color: #111;
+}
+
+.active { /* The active class */
+	background-color: #04AA6D;
 }
