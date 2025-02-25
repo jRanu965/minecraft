@@ -84,9 +84,13 @@ div{
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  
+  .hardcore {
+    background-color: red;
+  }
 
 h3 {
-    font-size: 4em;
+    font-size: 5em;
     text-align: center;
     vertical-align: text-top;
 }
