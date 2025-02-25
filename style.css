@@ -14,5 +14,6 @@ div{
     padding-top: 20px;
 }
 .nav {
-    grid-column: ;
+    grid-column: 2/3 ;
+    
 }
