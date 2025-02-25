@@ -33,33 +33,57 @@ div{
     grid-column: 1/2;
     grid-row: 4/5;
 }
-ul {
-	list-style-type: none; /* Get rid of bullets for ul */
-	margin: 0px; /* No spaces around the ul */
-	padding: 0px; /* No spaces inside the ul */
-	overflow: hidden; /* Don't allow the floated li blocks to collapse the navbar */
-	background-color: #333;
-}
 
-li {
-	float:left; /* Float each li block to the top left beside each other */
-}
-
-li a {
-	display: block; /* Allow the element to take up its own line and space */
-	color: white;
-	text-align: center; /* Center the text in the block */
-	padding: 14px 16px; /* 14px space on the top and bottom; 16px space on the left and right */
-	text-decoration: none; /* Do not underline the link */
-}
-
-li a:hover:not(.active) { /* Change colour on hover of all blocks but NOT the .active class */
-	background-color: #111;
-}
-
-.active { /* The active class */
-	background-color: #04AA6D;
-}
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #38444d;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 h3 {
     font-size: 4em;
